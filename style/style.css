@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    background-color: rgb(245, 243, 243);
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #99D9EA;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.tagesschrift-regular {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .edu-nsw-act-hand-pre-uniquifier {
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+  
+.nunito-uniquifier {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Nunito", sans-serif;
+}
+
+nav a{
+    font-weight: 600;
+    padding-inline: 20px;
+    background-color: #ff7b53;
+    border-radius: 20px;
+
+}
+
+nav a:hover {
+    
+    color: brown;
+    border: 2px solid #000000ef;
+    
+    padding-inline: 20px;
+}
+
+@media (max-width:500px) {
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+.header_a{
+    display: flex;
+   
+}
+
+.header_a img{
+    display: flex;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+
+.parent {
+    max-width: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    }
+    
+    .div1 {
+         margin: 10px;
+         grid-area: 1 / 1 / 2 / 3;
+         }
+    .div2 {
+         grid-area: 2 / 1 / 3 / 2;
+         }
+    .div3 {
+         grid-area: 2 / 2 / 3 / 3; 
+        }
+
+.div1 img {
+    width: 100%;
+}
+.div2 img {
+    width: 100%;
+}
+.div3 img {
+    width: 100%;
+}
+
+.sobre_nosotros{
+    position: absolute;
+}
+
+.contenedor_padre {
+    padding: 20px;
+    max-width: 2000px;
+    background-color: rgb(195, 193, 193);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    
+  }
+  
+  .card{
+    background-color: #ffffffef;
+    width: 250px; 
+    border: 2px solid #000000ef;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    margin: 50px;
+    
+  
+}
+
+.card button{
+    padding: 10px 20px; 
+    background-color: #ff7b53;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+}
+
+.card_moda img{
+    border-radius: 50px;
+    width: 100px;
+    margin: 25px;
+}
+
+.contenedor_padre_moda {
+    max-width: 2000px;
+    display: flex;
+    flex-wrap:wrap;
+    margin-top:20px ;
+    justify-content:center; 
+    
+}
+
+.contenedor_padre_foto{
+    max-width: 2000px;
+    display: flex;
+    flex-wrap:wrap;
+    margin-top:20px ;
+    justify-content:center;
+}
+
+
+footer{
+    padding: auto;
+    background-color: #99D9EA;
+    display: flex;
+    width:100%;
+    bottom: 0;
+    font-family: "Nunito", sans-serif;
+}
