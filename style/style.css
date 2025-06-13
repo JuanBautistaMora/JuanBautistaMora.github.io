@@ -69,13 +69,18 @@ a {
     padding-inline: 20px;
     background-color: #ffffff;
     border-radius: 20px;
-    transition:  0.3s ease;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
     color: rgb(255, 255, 255);
     border:rgb(255, 255, 255) solid 1px;
     background-color: #333;
+}
+
+nav{
+    display: flex;
 }
 
 @media (max-width:500px) {
@@ -212,11 +217,44 @@ main img{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
 
-button{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
+.gallery-item{
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
 
+.carousel-inner {
+    max-width: 600px; /* Ancho máximo del carrusel */
+    max-height: 400px; /* Altura máxima del carrusel */
+    margin: 0 auto; /* Centrar el carrusel */
+    overflow: hidden; /* Asegúrate de que no se desborde */
+}
+
+.carousel-inner img {
+    width: 100%; /* Ajusta el ancho de las imágenes al contenedor */
+    height: auto; /* Mantén la proporción de las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: cover; /* Ajusta las imágenes para que se vean bien */
+}
+.carousel {
+    max-width: 600px; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centrar el carrusel */
+}
 footer {
     background-color: #333; 
     color: #fff; 
@@ -239,13 +277,3 @@ section {
     animation: fadeIn 4s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
