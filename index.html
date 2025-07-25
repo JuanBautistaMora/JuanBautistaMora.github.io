@@ -1,165 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kristel Manríquez - CV</title>
+    <title>Lic. María López - Psicóloga</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="layout">
+    <div class="card">
         <nav class="sidebar">
             <ul>
                 <li data-section="about" class="active">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M4 22c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="2"/>
                     </svg>
                     <span>Sobre mí</span>
                 </li>
                 <li data-section="experience">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 7H21V21H3V7Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M16 3H8V7H16V3Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M3 7h18v14H3V7z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 3H8v4h8V3z" stroke="currentColor" stroke-width="2"/>
                     </svg>
                     <span>Experiencia &amp; Formación</span>
                 </li>
-                <li data-section="works">
+                <li data-section="specialties">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 3H21V21H3V3Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
-                        <path d="M9 21V9" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7l3-7z" stroke="currentColor" stroke-width="2"/>
                     </svg>
-                    <span>Trabajos</span>
+                    <span>Enfoques y Especialidades</span>
                 </li>
                 <li data-section="contact">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 10L13 3V8H3V12H13V17L21 10Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M21 10l-8-7v5H3v4h10v5l8-7z" stroke="currentColor" stroke-width="2"/>
                     </svg>
                     <span>Contacto</span>
                 </li>
             </ul>
         </nav>
         <aside class="profile">
-            <img src="https://via.placeholder.com/150" alt="Kristel Manríquez" class="profile-photo">
-            <h1>Kristel Manríquez</h1>
+            <img src="https://via.placeholder.com/150" alt="Lic. María López" class="profile-photo">
+            <h1>Lic. María López</h1>
             <div class="languages">
                 <img src="https://flagcdn.com/w20/es.png" alt="Español">
-                <img src="https://flagcdn.com/w20/gb.png" alt="Inglés">
+                <img src="https://flagcdn.com/w20/us.png" alt="Inglés">
             </div>
             <div class="buttons">
-                <a href="#" class="btn">&#x2B07; Descargar CV</a>
-                <a href="#contact" class="btn">Hablemos</a>
+                <a href="#" class="btn" download>Descargar CV</a>
+                <a href="https://wa.me/123456789" target="_blank" class="btn">Solicitar turno</a>
             </div>
         </aside>
         <main class="sections">
             <section id="about" class="section active">
                 <h2>Sobre mí</h2>
-                <p>Profesional con amplia experiencia en desarrollo web. Apasionada por crear interfaces intuitivas y atractivas.</p>
-                <div class="skills">
-                    <div class="skill" data-percent="80">
-                        <svg viewBox="0 0 36 36">
-                            <path class="bg" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                            <path class="bar" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                        </svg>
-                        <span>HTML/CSS</span>
-                    </div>
-                    <div class="skill" data-percent="80">
-                        <svg viewBox="0 0 36 36">
-                            <path class="bg" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                            <path class="bar" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                        </svg>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill" data-percent="85">
-                        <svg viewBox="0 0 36 36">
-                            <path class="bg" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                            <path class="bar" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                        </svg>
-                        <span>SQL-NoSQL</span>
-                    </div>
-                    <div class="skill" data-percent="70">
-                        <svg viewBox="0 0 36 36">
-                            <path class="bg" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                            <path class="bar" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                        </svg>
-                        <span>Bootstrap/Vuetify/MUI</span>
-                    </div>
-                    <div class="skill" data-percent="80">
-                        <svg viewBox="0 0 36 36">
-                            <path class="bg" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                            <path class="bar" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                        </svg>
-                        <span>Figma</span>
-                    </div>
-                    <div class="skill" data-percent="70">
-                        <svg viewBox="0 0 36 36">
-                            <path class="bg" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                            <path class="bar" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                        </svg>
-                        <span>Vue/React</span>
-                    </div>
-                    <div class="skill" data-percent="50">
-                        <svg viewBox="0 0 36 36">
-                            <path class="bg" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                            <path class="bar" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831"/>
-                        </svg>
-                        <span>Java/Python/PHP</span>
-                    </div>
-                </div>
+                <p>Soy psicóloga con una visión integradora, dedicada a acompañar a las personas en su proceso de bienestar emocional.</p>
             </section>
             <section id="experience" class="section">
                 <h2>Experiencia &amp; Formación</h2>
                 <ul>
-                    <li>Desarrolladora Web - Empresa X (2019-2023)</li>
-                    <li>Ingeniería en Informática - Universidad Y</li>
+                    <li>Licenciatura en Psicología - Universidad Ejemplo</li>
+                    <li>5 años de experiencia en consulta privada</li>
+                    <li>Formación en terapia cognitivo-conductual</li>
                 </ul>
             </section>
-            <section id="works" class="section">
-                <h2>Trabajos</h2>
-                <p>Lista de proyectos destacados y links.</p>
+            <section id="specialties" class="section">
+                <h2>Enfoques y Especialidades</h2>
+                <ul>
+                    <li>Ansiedad y estrés</li>
+                    <li>Terapia de pareja</li>
+                    <li>Orientación a adolescentes</li>
+                </ul>
             </section>
             <section id="contact" class="section">
                 <h2>Contacto</h2>
+                <p>Podés dejar tu mensaje y te responderé a la brevedad.</p>
                 <form>
                     <input type="text" placeholder="Nombre" required>
                     <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    <textarea rows="4" placeholder="Mensaje" required></textarea>
                     <button type="submit">Enviar</button>
                 </form>
             </section>
         </main>
     </div>
-<script>
-// Navegación entre secciones
-const sidebarItems = document.querySelectorAll('.sidebar li');
-const sections = document.querySelectorAll('.section');
-sidebarItems.forEach(item => {
-    item.addEventListener('click', () => {
-        sidebarItems.forEach(i => i.classList.remove('active'));
-        item.classList.add('active');
-        const target = item.getAttribute('data-section');
-        sections.forEach(sec => {
-            if(sec.id === target) {
-                sec.classList.add('active');
-            } else {
-                sec.classList.remove('active');
-            }
+    <script>
+    const sidebarItems = document.querySelectorAll('.sidebar li');
+    const sections = document.querySelectorAll('.section');
+    sidebarItems.forEach(item => {
+        item.addEventListener('click', () => {
+            sidebarItems.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            const target = item.getAttribute('data-section');
+            sections.forEach(sec => {
+                if(sec.id === target){
+                    sec.classList.add('active');
+                } else {
+                    sec.classList.remove('active');
+                }
+            });
         });
     });
-});
-// Círculos de progreso
-const skills = document.querySelectorAll('.skill');
-skills.forEach(skill => {
-    const percent = skill.getAttribute('data-percent');
-    const circle = skill.querySelector('.bar');
-    const radius = 15.9155;
-    const circumference = 2 * Math.PI * radius;
-    circle.style.strokeDasharray = `${circumference}`;
-    circle.style.strokeDashoffset = `${circumference}`;
-    setTimeout(() => {
-        const offset = circumference - (percent / 100) * circumference;
-        circle.style.strokeDashoffset = offset;
-    }, 300);
-});
-</script>
+    </script>
 </body>
 </html>
