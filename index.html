@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>María Belén Martínez - Psicóloga</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <span class="logo">María Belén Martínez</span>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="tcc">TCC</h1>
+      <p class="hero-subtitle">Terapia Cognitivo-Conductual</p>
+      <a href="https://wa.me/5491136614168" target="_blank" class="cta-btn">Concretemos una entrevista</a>
+    </div>
+  </section>
+
+  <section class="sobre-mi">
+    <div class="contenido">
+      <h2>Sobre mí</h2>
+      <p>Soy María Belén Martínez, Licenciada en Psicología. Trabajo con un enfoque Cognitivo-Conductual adaptado a cada paciente, ofreciendo atención presencial y por Zoom.</p>
+      <h3>¿Cómo se orienta la terapia?</h3>
+      <p>La Terapia Cognitivo-Conductual (TCC) se centra en el presente, ayudando a identificar patrones de pensamiento y conducta que afectan el bienestar emocional. Juntas/os podemos explorar herramientas para gestionar emociones, superar obstáculos y construir un camino más saludable.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 María Belén Martínez. Todos los derechos reservados.</p>
+    <p><a href="/privacy.html">Política de privacidad</a> | <a href="/terms.html">Términos de servicio</a></p>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/5491136614168" class="whatsapp-float" target="_blank" title="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+  </a>
+
+  <!-- JS para header con scroll -->
+  <script>
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('visible');
+      } else {
+        header.classList.remove('visible');
+      }
+    });
+  </script>
+
+</body>
+</html>
