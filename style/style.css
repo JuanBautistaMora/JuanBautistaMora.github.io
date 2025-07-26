@@ -151,8 +151,23 @@
   footer {
     background-color: #2e7d32;
     color: white;
-    text-align: center
-  }  
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  footer a:hover {
+    opacity: 0.8;
+  }
+  
 
   /* WHATSAPP */
   .whatsapp-float {
