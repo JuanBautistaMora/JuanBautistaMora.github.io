@@ -4,100 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lic. María Belén Martínez - Psicóloga</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <nav class="sidebar">
-            <ul>
-                <li data-section="about" class="active">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M4 22c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                    <span>Sobre mí</span>
-                </li>
-                <li data-section="training">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 7h18v14H3V7z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M16 3H8v4h8V3z" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                    <span>Formación</span>
-                </li>
-                <li data-section="approaches">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7l3-7z" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                    <span>Enfoques</span>
-                </li>
-                <li data-section="contact">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 10l-8-7v5H3v4h10v5l8-7z" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                    <span>Contacto</span>
-                </li>
-            </ul>
-        </nav>
-        <aside class="profile">
-            <img src="./pngtree-young-executive-woman-png-image_15953147.png" alt="Lic. María Belén Martínez" class="profile-photo">
-            <h1>Lic. María Belén Martínez</h1>
-            <div class="languages">
-                <img src="https://flagcdn.com/w20/es.png" alt="Español">
-                <img src="https://flagcdn.com/w20/us.png" alt="Inglés">
-            </div>
-            <div class="buttons">
-                <a href="cv.pdf" class="btn" download>Descargar CV</a>
-                <a href="https://wa.me/5491136614168?text=Hola%2C%20quisiera%20solicitar%20un%20turno%20con%20la%20Lic.%20Mar%C3%ADa%20Bel%C3%A9n%20Mart%C3%ADnez" target="_blank" class="btn">Solicitar turno</a>
-            </div>
-        </aside>
-        <main class="sections">
-            <section id="about" class="section active">
-                <h2>Sobre mí</h2>
-                <p>Soy psicóloga con formación integral y enfoque humanista. Me especializo en el acompañamiento de adolescentes y adultos desde una perspectiva empática y respetuosa.</p>
-            </section>
-            <section id="training" class="section">
-                <h2>Formación</h2>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">Lic. María Belén Martínez</h1>
+            <nav>
                 <ul>
-                    <li>Lic. en Psicología - Universidad de Buenos Aires</li>
-                    <li>Especialización en Psicoterapia Focal</li>
-                    <li>Formación continua en abordajes de género y diversidad</li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#training">Formación</a></li>
+                    <li><a href="#approaches">Enfoques</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
-            </section>
-            <section id="approaches" class="section">
-                <h2>Enfoques y especialidades</h2>
-                <ul>
-                    <li>Psicoterapia individual</li>
-                    <li>Acompañamiento emocional en crisis</li>
-                    <li>Atención presencial y por Zoom</li>
-                </ul>
-            </section>
-            <section id="contact" class="section">
-                <h2>Contacto</h2>
-                <p>Podés solicitar un turno vía WhatsApp al +54 9 11 3661-4168 o usando el botón ‘Solicitar turno’.</p>
-            </section>
-        </main>
-    </div>
-    <script>
-    const sidebarItems = document.querySelectorAll('.sidebar li');
-    const sections = document.querySelectorAll('.section');
-    sidebarItems.forEach(item => {
-        item.addEventListener('click', () => {
-            sidebarItems.forEach(i => i.classList.remove('active'));
-            item.classList.add('active');
-            const target = item.getAttribute('data-section');
-            sections.forEach(sec => {
-                if(sec.id === target){
-                    sec.classList.add('active');
-                } else {
-                    sec.classList.remove('active');
-                }
-            });
-        });
-    });
-    </script>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="./pngtree-young-executive-woman-png-image_15953147.png" alt="Lic. María Belén Martínez" class="profile-photo">
+        <h2>Psicóloga</h2>
+        <div class="languages">
+            <img src="https://flagcdn.com/w20/es.png" alt="Español">
+            <img src="https://flagcdn.com/w20/us.png" alt="Inglés">
+        </div>
+        <div class="buttons">
+            <a href="cv.pdf" class="btn" download>Descargar CV</a>
+            <a href="https://wa.me/5491136614168?text=Hola%2C%20quisiera%20solicitar%20un%20turno%20con%20la%20Lic.%20Mar%C3%ADa%20Bel%C3%A9n%20Mart%C3%ADnez" target="_blank" class="btn">Solicitar turno</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Soy psicóloga con formación integral y enfoque humanista. Me especializo en el acompañamiento de adolescentes y adultos desde una perspectiva empática y respetuosa.</p>
+    </section>
+
+    <section id="training">
+        <h2>Formación</h2>
+        <ul>
+            <li>Lic. en Psicología - Universidad de Buenos Aires</li>
+            <li>Especialización en Psicoterapia Focal</li>
+            <li>Formación continua en abordajes de género y diversidad</li>
+        </ul>
+    </section>
+
+    <section id="approaches">
+        <h2>Enfoques y especialidades</h2>
+        <ul>
+            <li>Psicoterapia individual</li>
+            <li>Acompañamiento emocional en crisis</li>
+            <li>Atención presencial y por Zoom</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Podés solicitar un turno vía WhatsApp al +54 9 11 3661-4168 o usando el botón ‘Solicitar turno’.</p>
+    </section>
+
 </body>
 </html>
