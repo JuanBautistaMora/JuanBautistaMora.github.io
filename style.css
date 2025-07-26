@@ -134,16 +134,54 @@ button {
     .card {
         flex-direction: column;
         width: 100%;
+        max-width: 95vw;
+        padding: 10px;
     }
     .sidebar {
         width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #f0e4e4;
+        padding-top: 10px;
+    }
+    .sidebar ul {
         display: flex;
         justify-content: space-around;
+
+        padding: 0;
+    }
+    .sidebar li {
+        margin: 0 10px;
+
         border-right: none;
         border-bottom: 1px solid #f0e4e4;
+
     }
     .profile {
+        padding: 15px;
         border-right: none;
         border-bottom: 1px solid #f0e4e4;
+ 
+    }
+    .sections {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    p,
+    li {
+        font-size: 0.85rem;
+    }
+    .btn {
+        padding: 6px 8px;
+        text-align: left;
+    }
+    .buttons {
+        align-items: flex-start;
+
+
     }
 }
