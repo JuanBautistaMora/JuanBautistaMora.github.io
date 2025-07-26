@@ -1,7 +1,14 @@
+:root {
+    --beige: #f9f5ef;
+    --pink: #fadddd;
+    --primary: #c47c86;
+    --primary-dark: #9e616b;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #e6f7ff, #fff9f0);
+    background: linear-gradient(135deg, var(--beige), var(--pink));
     color: #333;
     display: flex;
     justify-content: center;
@@ -21,10 +28,10 @@ body {
 
 .sidebar {
     width: 150px;
-    background-color: #f0faff;
+    background-color: #fff7f6;
     padding-top: 20px;
     text-align: center;
-    border-right: 1px solid #eee;
+    border-right: 1px solid #f0e4e4;
 }
 
 .sidebar ul {
@@ -36,13 +43,13 @@ body {
 .sidebar li {
     cursor: pointer;
     margin: 20px 0;
-    color: #007088;
+    color: var(--primary);
     transition: color 0.3s;
 }
 
 .sidebar li.active,
 .sidebar li:hover {
-    color: #004d5e;
+    color: var(--primary-dark);
 }
 
 .sidebar svg {
@@ -54,7 +61,7 @@ body {
     width: 220px;
     padding: 20px;
     text-align: center;
-    border-right: 1px solid #eee;
+    border-right: 1px solid #f0e4e4;
 }
 
 .profile-photo {
@@ -62,7 +69,7 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #eee;
+    border: 4px solid #f0e4e4;
 }
 
 .languages img {
@@ -80,7 +87,7 @@ body {
     display: block;
     margin: 5px 0;
     padding: 8px 12px;
-    background-color: #007088;
+    background-color: var(--primary);
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -116,7 +123,7 @@ textarea {
 
 button {
     padding: 8px;
-    background-color: #007088;
+    background-color: var(--primary);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -127,16 +134,46 @@ button {
     .card {
         flex-direction: column;
         width: 100%;
+        max-width: 95vw;
+        padding: 10px;
     }
     .sidebar {
         width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #f0e4e4;
+        padding-top: 10px;
+    }
+    .sidebar ul {
         display: flex;
         justify-content: space-around;
-        border-right: none;
-        border-bottom: 1px solid #eee;
+        padding: 0;
+    }
+    .sidebar li {
+        margin: 0 10px;
     }
     .profile {
+        padding: 15px;
         border-right: none;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #f0e4e4;
+    }
+    .sections {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    p,
+    li {
+        font-size: 0.85rem;
+    }
+    .btn {
+        padding: 6px 8px;
+        text-align: left;
+    }
+    .buttons {
+        align-items: flex-start;
     }
 }
