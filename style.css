@@ -65,6 +65,17 @@ nav a:hover {
     background: linear-gradient(135deg, var(--beige), var(--pink));
 }
 
+.main-title {
+    font-size: 2.5rem;
+    margin: 10px 0 0 0;
+}
+
+.subtitle {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: var(--primary-dark);
+}
+
 .profile-photo {
     width: 150px;
     height: 150px;
@@ -101,10 +112,13 @@ section {
     padding: 60px 20px;
 }
 
+
+
 #about,
 #training,
 #approaches,
 {
+
     background-color: #fff;
     margin-top: 20px;
     border-radius: 8px;
@@ -113,6 +127,27 @@ section {
 
 ul {
     padding-left: 1.2em;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 200;
+}
+
+.whatsapp-btn svg {
+    width: 28px;
+    height: 28px;
+    fill: #fff;
 }
 
 @media (max-width: 600px) {
