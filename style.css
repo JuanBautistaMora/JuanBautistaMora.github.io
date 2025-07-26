@@ -134,6 +134,8 @@ button {
     .card {
         flex-direction: column;
         width: 100%;
+        max-width: 95vw;
+        padding: 10px;
     }
     .sidebar {
         width: 100%;
@@ -143,7 +145,24 @@ button {
         border-bottom: 1px solid #f0e4e4;
     }
     .profile {
+        padding: 15px;
         border-right: none;
         border-bottom: 1px solid #f0e4e4;
+    }
+    .sections {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    p,
+    li {
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: 6px 10px;
     }
 }
