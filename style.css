@@ -7,6 +7,10 @@
 
 body {
     margin: 0;
+
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, var(--beige), var(--pink));
+    color: #3c3c3c;
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, var(--beige), var(--pink));
     color: #333;
@@ -106,6 +110,17 @@ body {
     display: block;
 }
 
+.sections ul {
+    list-style-type: disc;
+    padding-left: 1.25em;
+    margin: 0 0 1em 0;
+}
+
+.sections ul li {
+    margin-bottom: 0.6em;
+    text-align: justify;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -146,21 +161,17 @@ button {
     .sidebar ul {
         display: flex;
         justify-content: space-around;
-
         padding: 0;
     }
     .sidebar li {
         margin: 0 10px;
-
         border-right: none;
         border-bottom: 1px solid #f0e4e4;
-
     }
     .profile {
         padding: 15px;
         border-right: none;
         border-bottom: 1px solid #f0e4e4;
- 
     }
     .sections {
         padding: 20px;
@@ -181,7 +192,4 @@ button {
     }
     .buttons {
         align-items: flex-start;
-
-
     }
-}
