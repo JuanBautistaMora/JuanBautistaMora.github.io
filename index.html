@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>María Belén Martínez - Psicóloga</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lic. María Belén Martínez - Psicóloga</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
 
+  <!-- HEADER -->
   <header id="main-header">
-    <span class="logo">María Belén Martínez</span>
+    <span class="logo">Lic. María Belén Martínez</span>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proximamente">Otra sección</a></li>
+      </ul>
+      <button class="hamburger-btn" id="hamburger">
+        <span class="hamburger-icon">&#9776;</span>
+      </button>
+    </nav>
   </header>
 
+  <!-- FULLSCREEN MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#sobre-mi" onclick="toggleMenu()">Sobre mí</a>
+    <a href="#proximamente" onclick="toggleMenu()">Otra sección</a>
+  </div>
+
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1 class="tcc">TCC</h1>
       <p class="hero-subtitle">Terapia Cognitivo-Conductual</p>
-      <a href="https://wa.me/5491136614168" target="_blank" class="cta-btn">Concretemos una entrevista</a>
+      <a href="https://wa.me/5491136614168?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20las%20consultas%20y%20la%20disponibilidad%20de%20turnos." target="_blank" class="cta-btn">Concretemos una entrevista</a>
     </div>
   </section>
 
-  <section class="sobre-mi">
+  <!-- SOBRE MÍ -->
+  <section class="sobre-mi" id="sobre-mi">
     <div class="contenido">
       <h2>Sobre mí</h2>
       <p>Soy María Belén Martínez, Licenciada en Psicología. Trabajo con un enfoque Cognitivo-Conductual adaptado a cada paciente, ofreciendo atención presencial y por Zoom.</p>
@@ -31,27 +49,47 @@
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 María Belén Martínez. Todos los derechos reservados.</p>
-    <p><a href="/privacy.html">Política de privacidad</a> | <a href="/terms.html">Términos de servicio</a></p>
+  <!-- OTRA SECCIÓN -->
+  <section id="proximamente" class="seccion-vacia">
+    <h2>Próximamente</h2>
+    <p>Espacio reservado para futuras secciones.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-grid">
+    <div class="footer-item">
+      <p><strong>Contacto:</strong></p>
+      <p>mariabelen@gmail.com</p>
+    </div>
+    <div class="footer-item">
+      <p><strong>Lorem Ipsum</strong></p>
+      <p>Contenido temporal</p>
+    </div>
+    <div class="footer-item">
+      <p><strong>Lorem Ipsum</strong></p>
+      <p>Texto de ejemplo</p>
+    </div>
   </footer>
 
-  <!-- Botón flotante WhatsApp -->
-  <a href="https://wa.me/5491136614168" class="whatsapp-float" target="_blank" title="WhatsApp">
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/5491136614168?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20las%20consultas%20y%20la%20disponibilidad%20de%20turnos." class="whatsapp-float" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
   </a>
 
-  <!-- JS para header con scroll -->
   <script>
     const header = document.getElementById('main-header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('visible');
-      } else {
-        header.classList.remove('visible');
-      }
-    });
-  </script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
 
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('visible', window.scrollY > 50);
+    });
+
+    function toggleMenu() {
+      mobileMenu.classList.toggle('active');
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+  </script>
 </body>
 </html>
