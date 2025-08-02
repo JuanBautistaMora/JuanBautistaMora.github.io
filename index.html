@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lic. María Belén Martínez - Psicóloga</title>
+  <title>Consultorio de Psicología</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
 
   <!-- HEADER -->
   <header id="main-header">
-    <span class="logo">Lic. María Belén Martínez</span>
     <nav class="nav">
       <ul class="nav-links">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        </li>
+        <li><a href="#sobre-mi">Sobre Nosotros</a></li>
+        <li><a href="#parent">Terepia</a></li>
       </ul>
       <button class="hamburger-btn" id="hamburger">
         <span class="hamburger-icon">&#9776;</span>
@@ -25,65 +27,147 @@
 
   <!-- FULLSCREEN MOBILE MENU -->
   <div class="mobile-menu" id="mobile-menu">
-    <a href="#sobre-mi" onclick="toggleMenu()">Sobre mí</a>
+    <a href="#sobre-mi" onclick="toggleMenu()">Sobre Nosotros</a>
     <a href="#parent" onclick="toggleMenu()">Terapia</a>
   </div>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
+  <section class="hero-clean">
     <div class="hero-content">
-      <h1 class="tcc">TCC</h1>
-      <p class="hero-subtitle">Terapia Cognitivo-Conductual</p>
-      <a href="https://wa.me/5491136614168?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20las%20consultas%20y%20la%20disponibilidad%20de%20turnos." target="_blank" class="cta-btn">Concretemos una entrevista</a>
+      <h1>Consultorio de Psicología</h1>
+      <a href="https://wa.me/5491136614168?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20las%20consultas%20y%20la%20disponibilidad%20de%20turnos." class="cta-btn">Solicitar un turno</a>
     </div>
   </section>
+  
+  
+
+  <!-- TRANSICIÓN ANIMADA -->
+<section class="scatter-transition">
+  <svg id="scatter-bg" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
+    <g class="circle-group" transform="translate(200,250)">
+      <circle r="80" fill="#5A3E2B" />
+      <text text-anchor="middle" dy="0.3em" fill="white" font-size="18">Ansiedad</text>
+    </g>
+    <g class="circle-group" transform="translate(500,200)">
+      <circle r="60" fill="#5A3E2B" />
+      <text text-anchor="middle" dy="0.3em" fill="white" font-size="16">Vínculos</text>
+    </g>
+    <g class="circle-group" transform="translate(300,400)">
+      <circle r="90" fill="#5A3E2B" />
+      <text text-anchor="middle" dy="0.3em" fill="white" font-size="20">Identidad</text>
+    </g>
+    <g class="circle-group" transform="translate(800,350)">
+      <circle r="70" fill="#5A3E2B" />
+      <text text-anchor="middle" dy="0.3em" fill="white" font-size="16">Confianza</text>
+    </g>
+  </svg>
+</section>
+
+
+
 
   <!-- SOBRE MÍ -->
-  <section class="sobre-mi" id="sobre-mi">
-    <div class="contenido">
-      <h2>Sobre mí</h2>
-      <p>Soy María Belén Martínez, Licenciada en Psicología. Trabajo con un enfoque Cognitivo-Conductual adaptado a cada paciente, ofreciendo atención <b>presencial</b> y <b>online</b>.</p>
-      <h3>¿Cómo se orienta la terapia?</h3>
-      <p>La Terapia Cognitivo-Conductual (TCC) se centra en el presente, ayudando a identificar patrones de pensamiento y conducta que afectan el bienestar emocional. Juntas/os podemos explorar herramientas para gestionar emociones, superar obstáculos y construir un camino más saludable.</p>
+  <!-- QUIÉNES SOMOS -->
+<section class="quienes-somos" id="sobre-mi">
+  <div class="contenido">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos un equipo de profesionales de la psicología comprometidas con ofrecer un espacio cálido, profesional y accesible. Nuestra meta es acompañarte con responsabilidad, sensibilidad y claridad en tu proceso de bienestar emocional.</p>
+  </div>
+  <div class="equipo-grid">
+    <div class="card-persona">
+      <img src="https://i.imgur.com/Wr2zA3R.jpg" alt="Lic. María Belén Martínez" />
+      <h3>Lic. María Belén Martínez</h3>
+      <p>Universidad de Buenos Aires</p>
+      <p>M.P. 63675 · M.N. 82197</p>
     </div>
-    <div class="parent" id="parent">
-      <div>
-        <h2>Objetivo</h2>
-        <p>La TCC tiene como objetivo poder interpretar qué forma tiene el paciente de ver el mundo, a los demás y a sí mismo, y así poder identificar y modificar patrones de pensamiento y creencias personales que resultan ser disfuncionales y generan malestar, operando y corrigiendo las emociones, conductas y/o respuestas fisiológicas que puedan alterar la vida diaria del paciente.</p>
-      </div>
-      <div><img src="https://us.123rf.com/450wm/pogorelovaolga/pogorelovaolga1902/pogorelovaolga190200120/119150348-dos-cabezas-de-una-persona-con-la-mentalidad-opuesta-concepto-de-caos-y-orden-en-los-pensamientos.jpg?ver=6" alt=""></div>
-    
+    <div class="card-persona">
+      <img src="https://i.imgur.com/FfMH2uG.jpg" alt="Lic. María Eugenia Iramain" />
+      <h3>Lic. María Eugenia Iramain</h3>
+      <p>Universidad de La Plata</p>
+      <p>M.P. XXXX · M.N. XXXX</p>
+    </div>
+  </div>
+</section>
+  <section class="sobre-mi">
+    <div class="parent" id="parent">   
       <div>
         <h2>Modalidad de Trabajo</h2>
-        <p>La modalidad de trabajo se caracteriza por ser una Terapia breve o medianamente breve, que se focaliza en el presente, en la problemática planteada y su solución, así también como la prevención hacia futuros trastornos. Esta psicoterapia requiere de una labor en conjunto de terapeuta-paciente para poder alcanzar objetivos desarrollados y propuestos entre los dos.</p>
+        <p>Esta propuesta terapéutica se basa en ofrecer un espacio seguro, confidencial y profesional, en el que cada persona pueda sentirse escuchada y acompañada, tanto de forma presencial como virtual. Consideramos que el proceso terapéutico requiere valentía, por eso priorizamos que cada encuentro sea un lugar libre de juicios, donde sea posible explorar con honestidad y respeto aquellos malestares, dudas o inquietudes que puedan estar afectando tu bienestar psíquico o emocional.
+          El objetivo es que la terapia sea un proceso de acompañamiento genuino, que fomente el crecimiento personal y el fortalecimiento de los propios recursos para afrontar los desafíos que surgen en el camino.</p>
       </div>
       <div><img src="https://i0.wp.com/www.antena-libre.com.ar/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-26-at-14.40.53.jpeg?resize=730%2C411&ssl=1" alt=""></div>
     
       <div>
-        <h2>Primera entrevista</h2>
-        <p>En la primera entrevista se busca que el paciente encuentre un lugar cómodo y de confianza donde plantear la situación que lo aqueja. Se brindará información sobre la formación del terapeuta, se recogerá información acerca del paciente y el problema psicológico subyacente y se acordarán los objetivos terapéuticos y el encuadre de trabajo.</p>
+        <h2>Primeras entrevistas</h2>
+        <p>En las primeras entrevistas del proceso terapéutico se busca generar un espacio de confianza y contención donde la persona pueda expresar con libertad aquello que la trae a consulta. Durante estos encuentros iniciales, se exploran los motivos de consulta, se comienza a delinear la problemática a abordar y se establece el encuadre del trabajo terapéutico, incluyendo aspectos como la frecuencia, modalidad y objetivos generales. Al mismo tiempo, estos primeros encuentros permiten evaluar, de manera conjunta y cuidadosa, si la terapia podrá desarrollarse de forma adecuada y beneficiosa para la persona consultante.</p>
       </div>
       <div><img src="https://media.elancasti.com.ar/p/5dbdafae3d04db86ed7ec559a5ddf06c/adjuntos/325/imagenes/000/312/0000312791/1200x675/smart/salud-mental-menoreswebp.png" alt=""></div>
     </div>    
 </div>
-
   </section>
-  
+  <section class="galeria-flip">
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front" style="background-image: url('https://images.unsplash.com/photo-1588776814546-ec03dcb71c3e')">
+        <h3>Terapia Psicológica</h3>
+      </div>
+      <div class="flip-back">
+        <p>Te ayudamos a comprender y abordar tus malestares emocionales, conflictos internos o dificultades cotidianas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d')">
+        <h3>Psicotécnicos</h3>
+      </div>
+      <div class="flip-back">
+        <p>Evaluamos condiciones psicológicas y cognitivas para obtener o renovar la licencia de conducir.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front" style="background-image: url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb')">
+        <h3>Evaluaciones Neurocognitivas</h3>
+      </div>
+      <div class="flip-back">
+        <p>Exploramos memoria, atención, lenguaje y otras funciones para conocer tu perfil cognitivo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e8a5665b8f1')">
+        <h3>Orientación Vocacional</h3>
+      </div>
+      <div class="flip-back">
+        <p>Te acompañamos a descubrir tus habilidades y decidir con seguridad tu futuro educativo o laboral.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
  <!-- FOOTER ESTILO ELEGANTE -->
+ <div class="footer-wave">
+  <img src="/img/layered-waves-haikei.svg" alt="Decoración ondulada tipo Haikei">
+</div>
 <footer class="footer-elegante">
   <div class="footer-box">
     <div class="footer-icon">🏠</div>
     <h3>Dirección</h3>
     <hr>
-    <p>Recoleta, Buenos Aires</p>
+    <p>Berazategui (centro), Buenos Aires</p>
   </div>
   <div class="footer-box">
     <div class="footer-icon">✉️</div>
     <h3>Email</h3>
     <hr>
-    <p><a href="mailto:mariabelen@gmail.com">mariabelen@gmail.com</a></p>
+    <p><a href="mailto:mariabelen@gmail.com">mbelenm.bm@gmail.com</a></p>
   </div>
   <a href="https://wa.me/5491136614168?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20las%20consultas%20y%20la%20disponibilidad%20de%20turnos." target="_blank">
   <div class="footer-box">
@@ -101,29 +185,13 @@
   <a href="https://wa.me/5491136614168?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20las%20consultas%20y%20la%20disponibilidad%20de%20turnos." class="whatsapp-float" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
   </a>
+  <script src="script/scroll.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="script/transition.js"></script>
 
-  <script>
-    const header = document.getElementById('main-header');
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-  
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('visible', window.scrollY > 50);
-    });
-  
-    function toggleMenu() {
-      mobileMenu.classList.toggle('active');
-    }
-  
-    hamburger.addEventListener('click', toggleMenu);
-  
-    // NUEVO: cerrar menú cuando se pasa de ancho de pantalla móvil
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) {
-        mobileMenu.classList.remove('active');
-      }
-    });
-  </script>
-  
+
 </body>
 </html>
