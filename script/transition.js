@@ -59,19 +59,20 @@ if (window.innerWidth <= 768) {
   const cards = document.querySelectorAll('.flip-card');
 
   cards.forEach((card) => {
-    const inner = card.querySelector('.flip-inner');
+    // Gira cuando se scrollea
+    ScrollTrigger.create({
+      trigger: card,
+      start: "top 70%",
+      end: "center center",
+      toggleClass: { targets: card, className: "scroll-flip" },
+      once: false,
+    });
 
-    gsap.fromTo(inner,
-      { rotateY: 0 },
-      {
-        rotateY: 180,
-        scrollTrigger: {
-          trigger: card,
-          start: "top 30%",
-          end: "center center",
-          scrub: true,
-        }
+    // Si ya está girada, se revierte al tocar
+    card.addEventListener("click", () => {
+      if (card.classList.contains("scroll-flip")) {
+        card.classList.remove("scroll-flip");
       }
-    );
+    });
   });
 }

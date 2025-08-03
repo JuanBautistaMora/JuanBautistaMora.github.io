@@ -396,16 +396,7 @@ header.visible .nav-links a {
 
 
 
-@media (max-width: 768px) {
-  .flip-card:hover .flip-inner {
-    transform: none;
-  }
 
-  .flip-inner {
-    will-change: transform;
-    transform-style: preserve-3d;
-  }
-}
 
 
 .footer-wave {
@@ -633,6 +624,14 @@ header.visible .nav-links a {
   .scatter-transition {
     height: 40vh;
   }
+  
+  .flip-inner {
+    will-change: transform;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+  }
 
-
+  .flip-card.scroll-flip .flip-inner {
+    transform: rotateY(180deg);
+  }
 }
