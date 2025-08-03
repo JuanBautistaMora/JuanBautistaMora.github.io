@@ -1,4 +1,11 @@
-const header = document.getElementById('main-header');
+    document.querySelectorAll('.accordion-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.closest('.accordion-item');
+        item.classList.toggle('open');
+      });
+    });
+    
+    const header = document.getElementById('main-header');
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
   
@@ -18,3 +25,4 @@ const header = document.getElementById('main-header');
         mobileMenu.classList.remove('active');
       }
     });
+

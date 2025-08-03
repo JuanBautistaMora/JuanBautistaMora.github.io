@@ -34,7 +34,7 @@ header {
 }
 
 header.visible {
-  background: #eeae5f8d;
+  background: #f8d4a98d;
 }
 
 .nav {
@@ -52,7 +52,7 @@ header.visible {
   color: #444;
   text-decoration: none;
   font-weight: 500;
-  background-color: #eeae5f8d;
+  background-color: #ffffff90;
   transition: background-color 0.6s ease;
 }
 
@@ -74,10 +74,6 @@ header.visible .nav-links a {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.hamburger-btn:hover {
-  background-color: rgba(102, 153, 153, 0.1);
-}
-
 .hamburger-icon {
   font-size: 1.2rem;
   line-height: 1;
@@ -95,6 +91,7 @@ header.visible .nav-links a {
     background-image: url("https://videos.openai.com/vg-assets/assets%2Ftask_01k1hqjxj7e04axgasakb0n290%2F1754015668_img_0.webp?st=2025-08-01T01%3A34%3A22Z&se=2025-08-07T02%3A34%3A22Z&sks=b&skt=2025-08-01T01%3A34%3A22Z&ske=2025-08-07T02%3A34%3A22Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=sewwE2evFGoC91hUUdL3zqiz7sB61lpBfJD0jYvMA4E%3D&az=oaivgprodscus");
     background-position: center 20%;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     color: #fff;
   }
@@ -261,12 +258,18 @@ header.visible .nav-links a {
   margin: 40px auto 0;
   align-items: start;
   background-color: #c7bba9;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin: 0;
+  padding: 10px;
 }
 
-.parent img {
+.parent-img {
   max-width: 100%;
   height: auto;
   display: block;
+  padding: 10px;
+  border-radius: 8px;
 }
 .parent h2 {
   font-size: 2rem;
@@ -277,9 +280,54 @@ header.visible .nav-links a {
 
 .parent div {
   background-color: #f0f8f5;
-  padding: 20px;
   border-radius: 8px;
 }
+
+.accordion-item {
+  margin: 20px;
+  border: 1px solid #a88768;
+}
+
+.accordion-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #5a3e2b;
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #a88768;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.arrow-icon {
+  transition: transform 0.4s ease;
+  font-size: 1.2rem;
+}
+
+.accordion-item.open .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  text-align:center;
+}
+
+.accordion-item.open .accordion-body {
+  max-height: 800px;
+  opacity: 1;
+  margin-top: 10px;
+  padding: 10px;
+}
+
 
 .galeria-flip {
   display: flex;
@@ -296,7 +344,9 @@ header.visible .nav-links a {
   width: 260px;
   height: 340px;
   perspective: 1000px;
+  
 }
+
 
 .flip-inner {
   position: relative;
@@ -337,7 +387,7 @@ header.visible .nav-links a {
 }
 
 .flip-back {
-  background-color: white;
+  background-color: #c7bba9;
   color: #333;
   transform: rotateY(180deg);
   font-size: 0.95rem;
@@ -548,7 +598,6 @@ header.visible .nav-links a {
   .parent > img {
     width: 100%;
     max-width: 100%;
-    border-radius: 8px;
     padding: 0;
   }
 
@@ -574,7 +623,16 @@ header.visible .nav-links a {
   }
 
   #scatter-bg text {
-    font-size: 10px;
+    font-size: 0;
   }
-}
 
+  .whatsapp-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .scatter-transition {
+    height: 40vh;
+  }
+
+
+}

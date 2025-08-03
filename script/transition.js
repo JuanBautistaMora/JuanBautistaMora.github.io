@@ -19,8 +19,8 @@ circles.forEach((circle, i) => {
       opacity: 1,
       scrollTrigger: {
         trigger: ".scatter-transition",
-        start: "top center",
-        end: "bottom center",
+        start: "top 80%",
+        end: "bottom 50%",
         scrub: true,
       }
     }
@@ -41,14 +41,19 @@ circles.forEach((circle, i) => {
         opacity: 1,
         scrollTrigger: {
           trigger: ".scatter-transition",
-          start: "top center",
-          end: "bottom center",
+          start: "top 80%",
+          end: "bottom 50%",
           scrub: true,
         }
       }
     );
   }
 });
+
+
+
+applyMobileCirclePositions();
+
 
 if (window.innerWidth <= 768) {
   const cards = document.querySelectorAll('.flip-card');
@@ -62,7 +67,7 @@ if (window.innerWidth <= 768) {
         rotateY: 180,
         scrollTrigger: {
           trigger: card,
-          start: "top center",
+          start: "top 30%",
           end: "center center",
           scrub: true,
         }
