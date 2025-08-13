@@ -106,11 +106,11 @@ header.visible .nav-links a {
     position: relative;
     z-index: 1;
     padding: 20px;
+    font-family: "DM Sans", sans-serif;
   }
   
   .hero-clean h1 {
     font-size: 2.5rem;
-    font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -251,17 +251,17 @@ header.visible .nav-links a {
 
 
 .parent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 800px;
-  margin: 40px auto 0;
-  align-items: start;
+  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto 40px;
   background-color: #c7bba9;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  margin: 0;
-  padding: 10px;
+  border-radius: 12px;
 }
 
 .parent-img {
@@ -282,6 +282,9 @@ header.visible .nav-links a {
   background-color: #f0f8f5;
   border-radius: 8px;
 }
+
+
+
 
 .accordion-item {
   margin: 20px;
