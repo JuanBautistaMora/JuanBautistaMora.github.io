@@ -103,11 +103,13 @@ header.visible .nav-links a {
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
+    max-height: 200px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
     position: relative;
     z-index: 1;
     padding: 20px;
-    font-family: "DM Sans", sans-serif;
-  }
+}
   
   .hero-clean h1 {
     font-size: 2.5rem;
@@ -115,6 +117,7 @@ header.visible .nav-links a {
     font-weight: 500;
     font-style: normal;
     margin-bottom: 20px;
+    font-family: "DM Sans", sans-serif;
   }
   
   .cta-btn {
@@ -125,11 +128,80 @@ header.visible .nav-links a {
     border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    font-family: "DM Sans", sans-serif;
   }
   
   .cta-btn:hover {
     background-color: #3d2c1d;
   }
+
+  .hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+  }
+  
+  .hero-map {
+    flex: 1;
+    max-width: 600px;
+    max-height: 600px;
+  }
+  
+  .hero-content {
+    flex: 1;
+    max-width: 400px;
+  }
+  /* Layout dos columnas en el hero */
+  .hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 40px;
+    padding: 40px;
+  }
+
+/* El texto */
+.hero-flex .hero-content {
+  flex: 1;
+  max-width: 480px;
+}
+
+/* El mapa a la derecha */
+.hero-map {
+  flex: 1;
+  max-width: 640px;
+  width: 100%;
+  /* Mantiene proporción y hace que el iframe se adapte */
+  aspect-ratio: 4 / 3;
+  margin: auto; /* Centra el mapa horizontalmente y verticalmente */
+}
+
+.hero-map iframe {
+  width: 100%;
+  height: 100%;
+  margin:auto 0;
+  border: 5px solid #c7bba9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive: en mobile se apilan (texto arriba, mapa abajo) */
+@media (max-width: 900px) {
+  .hero-flex {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+  }
+  .hero-flex .hero-content,
+  .hero-map {
+    max-width: 100%;
+  }
+  /* un poco más panorámico en celus */
+  .hero-map { aspect-ratio: 16 / 9; }
+}
+
   
 /* SCATTER SECTION */
 .scatter-transition {
@@ -258,7 +330,7 @@ header.visible .nav-links a {
   gap: 30px;
   padding: 20px;
   width: 90%;
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto 40px;
   background-color: #c7bba9;
   border-radius: 12px;
