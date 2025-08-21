@@ -238,14 +238,15 @@ header.visible .nav-links a {
     margin: 0 auto 40px;
   }
   
-  .quienes-somos h2 {
+  .contenido h2 {
     font-size: 2.4rem;
     color: #7d552e;
     font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
+    text-align: center;
   }
   
-  .quienes-somos p {
+  .contenido p {
     font-size: 1.1rem;
     color: #444;
     margin-bottom: 15px;

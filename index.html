@@ -12,14 +12,15 @@
   <link rel="icon" href="./img/descarga.png" type="image/x-icon">
   <link rel="stylesheet" href="/style/style.css">
 </head>
-<body>
+<section>
 
   <!-- HEADER -->
   <header id="main-header">
     <nav class="nav">
       <ul class="nav-links">
         <li><a href="#sobre-mi">Sobre Nosotros</a></li>
-        <li><a href="#parent">Terapia</a></li>
+        <li><a href="#parent">Nuestro Trabajo</a></li>
+        <li><a href="#mapa">Ubicación</a></li>
       </ul>
       <button class="hamburger-btn" id="hamburger">
         <span class="hamburger-icon">&#9776;</span>
@@ -30,7 +31,8 @@
   <!-- FULLSCREEN MOBILE MENU -->
   <div class="mobile-menu" id="mobile-menu">
     <a href="#sobre-mi" onclick="toggleMenu()">Sobre Nosotros</a>
-    <a href="#parent" onclick="toggleMenu()">Terapia</a>
+    <a href="#parent" onclick="toggleMenu()">Nuestro Trabajo</a>
+    <a href="#mapa" onclick="toggleMenu()">Ubicación</a>
   </div>
 
 
@@ -66,16 +68,6 @@
   </svg>
 </section>
 
-
-<div class="hero-map">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77453.12778509314!2d-58.19421940747709!3d-34.749097736915445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f348c2fbdbf%3A0x80217bd276933f07!2sBerazategui%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e1!3m2!1ses-419!2sus!4v1755313255843!5m2!1ses-419!2sus"
-    loading="lazy" allowfullscreen
-    referrerpolicy="no-referrer-when-downgrade"
-    title="Mapa: Berazategui Centro, Buenos Aires">
-  </iframe>
-</div>
-
   <!-- SOBRE MÍ -->
   <!-- QUIÉNES SOMOS -->
 <section class="quienes-somos" id="sobre-mi">
@@ -93,13 +85,17 @@
     <div class="card-persona">
       <img src="./img/Imagen de WhatsApp 2025-08-03 a las 18.22.48_25c8baf8.jpg" alt="Lic. María Eugenia Iramain" />
       <h3>Lic. María Eugenia Iramain</h3>
-      <p>Universidad de La Plata</p>
+      <p>Universidad Nacional de La Plata (UNLP)</p>
       <p>M.P. 63454 · M.N. 82169</p>
     </div>
   </div>
 </section>
+  <div class="contenido" id="parent">
+    <h2>¿Cómo Trabajamos?</h2>
+  </div>
   <section class="sobre-mi">
-    <div class="parent" id="parent">   
+    
+    <div class="parent">   
       <div class="accordion-item">
         <button class="accordion-toggle btn btn-link">
           <span>Modalidad de Trabajo</span>
@@ -173,9 +169,23 @@
         </div>
       </div>
     </div>
-
+  </section>
+<section class="quienes-somos" id="mapa">
+  <div class="contenido">
+    <h2>¿Dónde nos encontramos?</h2>
+  </div>
+<div class="hero-map">
+<iframe 
+  src="https://www.google.com/maps/d/embed?mid=1wmItFLxCrNFABEOK78fPhXW8BU1udsU&ehbc=2E312F&noprof=1"
+  width="100%"
+  height="450"
+  style="border:0;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Mapa: Calle 13 4115, B1884 Berazategui, Provincia de Buenos Aires">
+</iframe>
+</div>
 </section>
-
 
  <!-- FOOTER -->
 <div class="footer-wave">
@@ -187,7 +197,7 @@
     <div class="footer-icon"><i class="bi bi-house-door-fill"></i></div>
       <h3>Dirección</h3>
       <hr>
-      <p>Berazategui (centro), Buenos Aires</p>
+      <p>Berazategui (Centro), Buenos Aires</p>
   </div>
 
   <div class="footer-box">
@@ -207,7 +217,7 @@
   </a>
   
 </footer>
-<div class="footer-copy">Copyright © Mora J.Bautista </div>
+<div class="footer-copy">Copyright © Mora J. Bautista </div>
 
 
   <!-- WHATSAPP -->
